@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *sectionLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *pressMeHeightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondSpacerHeightConstant;
-
+@property (weak, nonatomic) NSIndexPath *indexPath;
 @end
 
 NS_ASSUME_NONNULL_END

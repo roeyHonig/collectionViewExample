@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topSpacerHeigt;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleHiegtConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSpacerHightConstraint;
-
+@property (weak, nonatomic) NSIndexPath *indexPath;
 @end
 
 NS_ASSUME_NONNULL_END

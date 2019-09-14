@@ -54,6 +54,7 @@
     // set delegates
     myCollectionView.dataSource = self;
     myCollectionView.delegate = self;
+    //[collectionData exchangeObjectAtIndex:<#(NSUInteger)#> withObjectAtIndex:<#(NSUInteger)#>]; // How To Swap 2 elements in an NSMutableArray
 }
 
 
@@ -92,6 +93,7 @@
             headerView.pressMeHeightConstraint.constant = 0.0;
             headerView.secondSpacerHeightConstant.constant = 0.0;
         }
+        headerView.indexPath = indexPath;
         return headerView;
     } else if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
         LowerCollectionReusableView *footerView = (LowerCollectionReusableView *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"myFooter" forIndexPath:indexPath];
@@ -104,6 +106,7 @@
             footerView.titleHiegtConstraint.constant = 0.0;
             footerView.bottomSpacerHightConstraint.constant = 0.0;
         }
+        footerView.indexPath = indexPath;
         return footerView;
     } else {
         return [[UICollectionReusableView alloc] init];
