@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ExampleCollectionReusableView : UICollectionReusableView
 @property (weak, nonatomic) IBOutlet UILabel *sectionLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *pressMeHeightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *secondSpacerHeightConstant;
 
 @end
 

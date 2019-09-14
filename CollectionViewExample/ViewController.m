@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ExampleCollectionViewCell.h"
 #import "ExampleCollectionReusableView.h"
+#import "LowerCollectionReusableView.h"
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
@@ -85,11 +86,25 @@
         }
         [headerView.sectionLabel setText:headerLabel];
         if (isEditMode) {
-            headerView.pressMeHeightConstraint.constant = 21.0;
+            headerView.pressMeHeightConstraint.constant = 30.0;
+            headerView.secondSpacerHeightConstant.constant = 5.0;
         } else {
             headerView.pressMeHeightConstraint.constant = 0.0;
+            headerView.secondSpacerHeightConstant.constant = 0.0;
         }
         return headerView;
+    } else if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
+        LowerCollectionReusableView *footerView = (LowerCollectionReusableView *)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"myFooter" forIndexPath:indexPath];
+        if (isEditMode) {
+            footerView.topSpacerHeigt.constant = 5.0;
+            footerView.titleHiegtConstraint.constant = 30.0;
+            footerView.bottomSpacerHightConstraint.constant = 5.0;
+        } else {
+            footerView.topSpacerHeigt.constant = 0.0;
+            footerView.titleHiegtConstraint.constant = 0.0;
+            footerView.bottomSpacerHightConstraint.constant = 0.0;
+        }
+        return footerView;
     } else {
         return [[UICollectionReusableView alloc] init];
     }
@@ -97,9 +112,17 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     if (isEditMode) {
-        return CGSizeMake(50.0, 120.0);
+        return CGSizeMake(50.0, 105.0);
     } else {
-        return CGSizeMake(50.0, 60.0);
+        return CGSizeMake(50.0, 70.0);
+    }
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForFooterInSection:(NSInteger)section{
+    if (isEditMode) {
+        return CGSizeMake(50.0, 40.0);
+    } else {
+        return CGSizeMake(50.0, 5.0);
     }
 }
 

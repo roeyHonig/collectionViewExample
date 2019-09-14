@@ -17,6 +17,7 @@
 		A5B73E36232D428700DDD50C /* CollectionViewExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B73E35232D428700DDD50C /* CollectionViewExampleUITests.m */; };
 		A5B73E45232D56B200DDD50C /* ExampleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B73E44232D56B200DDD50C /* ExampleCollectionViewCell.m */; };
 		A5B73E48232D60F100DDD50C /* ExampleCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B73E47232D60F100DDD50C /* ExampleCollectionReusableView.m */; };
+		A5B73E4B232D90FD00DDD50C /* LowerCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B73E4A232D90FD00DDD50C /* LowerCollectionReusableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		A5B73E44232D56B200DDD50C /* ExampleCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleCollectionViewCell.m; sourceTree = "<group>"; };
 		A5B73E46232D60F100DDD50C /* ExampleCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleCollectionReusableView.h; sourceTree = "<group>"; };
 		A5B73E47232D60F100DDD50C /* ExampleCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleCollectionReusableView.m; sourceTree = "<group>"; };
+		A5B73E49232D90FD00DDD50C /* LowerCollectionReusableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LowerCollectionReusableView.h; sourceTree = "<group>"; };
+		A5B73E4A232D90FD00DDD50C /* LowerCollectionReusableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LowerCollectionReusableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				A5B73E44232D56B200DDD50C /* ExampleCollectionViewCell.m */,
 				A5B73E46232D60F100DDD50C /* ExampleCollectionReusableView.h */,
 				A5B73E47232D60F100DDD50C /* ExampleCollectionReusableView.m */,
+				A5B73E49232D90FD00DDD50C /* LowerCollectionReusableView.h */,
+				A5B73E4A232D90FD00DDD50C /* LowerCollectionReusableView.m */,
 			);
 			path = CollectionViewExample;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				A5B73E45232D56B200DDD50C /* ExampleCollectionViewCell.m in Sources */,
 				A5B73E21232D428600DDD50C /* main.m in Sources */,
 				A5B73E13232D427E00DDD50C /* AppDelegate.m in Sources */,
+				A5B73E4B232D90FD00DDD50C /* LowerCollectionReusableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
